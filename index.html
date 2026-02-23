@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Таблица умножения</h1>
+        <p>От 2 до 9 — сгенерировано циклом for на JavaScript</p>
+      </nav>
+    </header>
+    <hr />
+
+    <script>
+
+
+    for (let i = 2; i <= 9; i++) {
+        document.writeln("<div class='box'>")
+        document.writeln("<h3>Умножение на </h3>" + i)
+        document.writeln(`<table border="1">`);
+        document.writeln("<tr><th>Выражение</th><th>Результат</th></tr>")
+    for(let n = 1 ; n <= 10;n++) {
+        document.writeln(`<tr><td>${i} x ${n}</td><td>${i*n}</td></tr>`)
+    }
+        document.writeln(`</table>`);
+        document.writeln("</div>")
+    }
+    </script>
+    </body>
+</html>
